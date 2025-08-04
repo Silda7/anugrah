@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1E88E5;
+    transition: width 0.4s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+    padding: 10px 5px;
+    transition: 0.2s;
+    font-weight: 400;
+    font-family: "Playfair Display SC", serif;
+    font-size: 18px;
+}
+
+.hero-home {
+    min-height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../misc/home_banner.jpg");
+    ;
+}
+
+.section_gap {
+    padding: 3rem 0 0 0;
+    background-image: linear-gradient(135deg, #abdcff00 10%, #0396ff08 100%);
+}
+
+.section_gap2 {
+    padding: 4rem 0 0 0;
+    background-image: linear-gradient(135deg, #abdcff00 10%, #0396ff08 100%);
+}
+
+hr {
+    opacity: 1;
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    height: 1px;
+    width: 10%;
+    background-color: #c3e2f0;
+}
+
+.copyright {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 11%);
+    width: 100%;
+    background: white;
+    color: black;
+    font-weight: 200;
+    box-shadow: 5px 2px 5px 0 rgb(0 0 0 / 27%);
+    font-family: "Playfair Display SC", serif;
+    font-size: 18px;
+}
+
+.caption {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.kategoricaption{
+    margin-top: 150px;
+}
+
+.imgisiberita {
+    width: 100%;
+    object-fit: contain;
+}
+
+.isiberita {
+    max-width: 800px;
+}
+
+
+
+.is-96x96 {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.is-70x70 {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.btnriwayat {
+    min-width: 104px;
+}
+
+.btnriwayatforum {
+    min-width: 122.6px;
+
+}
+
+.dropdown-item {
+    font-family: "Playfair Display SC", serif;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #1E88E5;
+    color: #fff;
+    font-family: "Playfair Display SC", serif;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+    }
+}
+
+.is-96x96 {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14pt;
+    border: none;
+    text-decoration: none;
+}
+
+.login-banner {
+    background-image: url('../misc/login_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.anugrah {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lead {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tanya {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.beli {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cari_produk {
+    font-family: "Playfair Display SC", serif;
+}
+
+.nama_produk {
+    font-family: "Libre Bodoni", serif;
+}
+
+.harga {
+    font-family: "Oregano", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn {
+    font-family: "Playfair Display SC", serif;
+    font-size: 18px;
+}
+
+.deskripsi {
+    font-family: "DM Serif Text", serif;
+}
+
+.deskripsi_produk {
+    font-family: "Playfair Display SC", serif;
+}
+
+.ft{
+    font-family: "Moon Dance", cursive;
+    font-size: 21px;
+}
+
+.lg{
+    font-family: "Playfair Display SC", serif;
+    font-size: 18px;
+}
+
+.riwayat {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.profil{
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
