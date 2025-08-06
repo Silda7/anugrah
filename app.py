@@ -135,25 +135,7 @@ def admin_required(f):
 
 @app.route('/')
 def home():
-    token_receive = request.cookies.get("mytoken")
-    try:
-        if token_receive:
-            payload = jwt.decode(token_receive, SECRET_KEY, algorithms=['HS256'])
-            user_info = db.user.find_one({'username': payload['id']})
-        else:
-            user_info = None
-        
-        articles = db.articles.find().sort("tanggal", -1).limit(3)
-        
-        return render_template('index.html', user_info=user_info, articles=articles)
-    
-    except jwt.ExpiredSignatureError:
-        return render_template("index.html")
-    
-    except jwt.exceptions.DecodeError:
-        return render_template("index.html")
-
-    
+    return "✅ Aplikasi berhasil jalan sampai route /"
 
 @app.route("/login")
 def login():
